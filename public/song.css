@@ -5,18 +5,24 @@ body {
 	text-align:center;
 	width: 80%;
 	margin: 1cm auto;
-	}
+  }
+  
 a:visited {color:blue;}
+
 a:link {color:blue;}
+
 h1,h2,h3,h4 {color:red;}
+
 table { 
 	border-style:solid;
 	border-color:#F8F8F8;
 	margin:auto;
 	text-align:center;
 	empty-cells:show;
-	}
+  }
+  
 th { background-color:#f7efde; color:red;}
+
 td {
 	color:blue;
 	border-style:outset;
@@ -24,7 +30,8 @@ td {
 	background-color:#f7efde;
 	padding:5px;
 	vertical-align: central;
-	}
+  }
+  
 td.school { /* :nth-child(3),td:nth-child(4) º]³æªº¿ý¨ú¾Ç®Õ¡B¨t©ÒÄæ */
 	text-align: left;
 }

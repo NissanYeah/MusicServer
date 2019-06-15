@@ -1,40 +1,34 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Song Player</title>
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-<link rel="stylesheet" type="text/css" href="song.css" >
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- -->
-<script>
-function okPlay(mp3filpath) {
-	au = document.getElementById("mp3play");
-  au.src = mp3filpath
-	au.volume = .5;
-    au.play();
-}
-</script>
-</head>
-<body>
-  <h2>Song Player</h2>
-  <table>
-    <tr><th>順序</th><th>歌名</th><th>檔名</th><th>action</th></tr>
-    </form>
-    <form action="./upload" method="POST" enctype='multipart/form-data'>
-      <tr>
-        <td>&nbsp;</td>
-        <td><input type="text" name="songName" ></td>
-        <td>檔案:<input id="songFile" type="file" name="songFile">
-        <td><button id="submit">新增歌曲</button></td>
-      </tr>
-      <tr id="content">
-      </tr>
-    </form>
-  </table>
-  <audio id="mp3play" src="" controls="controls" autoplay="autoplay"></audio>
-</body>
-<script src="/app.js"></script>
-<script>
-</script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Song Player</title>
+    <link rel="stylesheet" type="text/css" href="song.css" >
+    <script>
+    function okPlay(mp3filpath) {
+      au = document.getElementById("mp3play");
+      au.src = mp3filpath
+      au.volume = .5;
+        au.play();
+    }
+    </script>
+  </head>
+  <body>
+    <h2>Song Player</h2>
+    <table>
+      <tr><th>順序</th><th>歌名</th><th>檔名</th><th>action</th></tr>
+      </form>
+      <form action="./upload" method="POST" enctype='multipart/form-data'>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="text" name="songName" ></td>
+          <td>檔案:<input id="songFile" type="file" name="songFile">
+          <td><input type="submit" value="新增歌曲" /></td>
+        </tr>
+        <tr id="content">
+        </tr>
+      </form>
+    </table>
+    <audio id="mp3play" src="" controls="controls" autoplay="autoplay"></audio>
+  </body>
 </html>
